@@ -6,7 +6,7 @@
 
 spark.conf.set(
     "fs.azure.account.key.storage4bank.dfs.core.windows.net",
-    "5veT98sHoY3JAn+SMZCIVljfSp35Q3Zg2d65BCydKATr4i2UjKsHw59ERj7+GcLkgK8KLSQVV1W5+ASt+VXwpg=="
+    "<storage-connection-string>"
 )
 
 
@@ -73,7 +73,7 @@ def flatten_dict(d, parent_key="", sep="_"):
 from azure.cosmos import CosmosClient
 
 endpoint = "https://bank-cosmos.documents.azure.com:443/"
-key = "Q87iRpcVupmCsYpMSdpMuONvZK9XHvx0DnfN0WlD64MdUPRSwXajmWgmx6GBMupczVrZ2lj871zQACDbpwLnNw=="
+key = "<storage-key>"
 db_name = "operation-storage-db"
 
 SYSTEM_FIELDS = ["_rid", "_self", "_etag", "_attachments", "_ts"]
